@@ -1,0 +1,29 @@
+
+h1{
+    margin: 100px;
+}
+.dot{
+position: relative;
+inset: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.dot::after{
+content: '';
+background-color: aqua;
+height: 20px;
+width: 20px;
+border-radius: 20px;
+
+}
+.dot{
+    animation: spin 2s infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
